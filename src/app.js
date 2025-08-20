@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/satellites", (req, res) => {
+app.get("/", (req, res) => {
   try {
     res.send(satellites);
   } catch (err) {
